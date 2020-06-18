@@ -6,7 +6,7 @@ directory(){
         IFS=': ' read -r -a array <<< "$typestr"
         type=${array[1]}
         if [ "$type" == "directory" ]; then
-            echo -e "\e[34m$thing [d-$type]"
+            echo -e "\e[34m$thing [$type]"
         elif [ "$type" == "CSV" ]; then
             echo -e "\e[36m$thing"
         elif [ "$type" == "Zip" ]; then
