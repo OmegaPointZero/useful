@@ -1,9 +1,3 @@
-username=`echo $(whoami)`
-
-# If we don't get an argument, search the current directory
-
-
-
 directory(){
     stuff=`ls -t $1 | head `
     for thing in $stuff
